@@ -21,7 +21,7 @@ blogForm.addEventListener('submit', function(event){
     formObject.title = formTitle.value;
     formObject.content = formContent.value;
     formArray.push(formObject);
-    console.log(blogForm);
     console.log(formObject.username);
     console.log(formArray)
+    localStorage.setItem('formArray', JSON.stringify(formArray))
 })
