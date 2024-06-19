@@ -24,4 +24,5 @@ blogForm.addEventListener('submit', function(event){
     console.log(formObject.username);
     console.log(formArray)
     localStorage.setItem('formArray', JSON.stringify(formArray))
+    window.location.href = "blog.html"
 })
