@@ -1,0 +1,25 @@
+#main-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 3px solid;
+    padding:10px;
+}
+
+#button-container{
+    display:flex;
+    /* margin:15px; */
+}
+
+h1 {
+    color: blue;
+    margin: 0px;
+}
+
+h2 {
+    border-bottom: 3px solid;
+}
+
+.blog-section{
+    border:1px solid;
+}

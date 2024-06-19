@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/blog.css">
 </head>
 
 <body>
-    <section class="main-navigation">
+    <section id="main-navigation">
         <h1>My 1st Blog</h1>
-        <button>Back</button>
-        <button>Dark Mode</button>
+        <section id="button-container">
+            <button>Back</button>
+            <button>Dark Mode</button>
+        </section>
     </section>
-    <div id="blog-section">
-        <h2>Blog Title</h2>
-        <p>Placeholder</p>
-        <p>Posted by:</p>
-    </div>
+    <section id="blog-section">
+        <div class="blog-entries">
+            <h2 class="blog-title">Blog Title</h2>
+            <p class="blog-content">Placeholder</p>
+            <p class="blog-username">Posted by:</p>
+        </div>
+    </section>
     <br>
     <footer>
         <p>Made with ❤️ By Cyrous</p>
@@ -24,5 +29,6 @@
         <p>Blog:</p>
         <p>Email:</p>
     </footer>
+    <script src="assets/js/blog.js"></script>
 </body>
 </html>
