@@ -1,43 +1,62 @@
-div {
-    border: 2px solid black;
+body{
+    margin: 0 8 0 8;
 }
 
 #main-navigation{
     text-align:right;
+    margin:5px;
+    border-bottom: 2px solid;
 }
 
 #main-navigation > button{
     padding-right: 0px;
+    margin-bottom: 5px;
 }
 
 #main-container{
     display: flex;
     width:100%;
-    height:100%;
+    height:100vh;
     align-items:center;
     justify-content: center;
 }
 
 #left-rail, #right-rail {
     flex: 1;
-    border: 1px solid black; /* Optional: for visual distinction */
     width:50%;
-    margin:5px;
-    text-align: center;
+    height:100vh;
+    /* margin:5px; */
+}
+
+#left-rail{
+    border-right: 2px solid;
+    /* padding-top: 30px;
+    padding-bottom: 30%; */
+    margin-right: 5px;
+    border-top: 2px solid;
+}
+
+#right-rail{
+    border-left: 2px solid;
+    margin-left: 5px;
+    border-top: 2px solid;
 }
 
 form{
     padding-bottom: 10px;
 }
 
-form input, textarea, label{
+form input, textarea{
     margin-left: 10px;
     width:400px;
 }
 
-form, label{
-    margin-left: 10px;
-    width:400px;
+textarea{
+    height:100px;
+}
+
+label{
+    margin-left:10px;
 }
 
 h2 {
@@ -46,4 +65,8 @@ h2 {
 
 h1{
     text-align: center;
+}
+
+body[data-mode="dark"]{
+    background-color: aqua;
 }

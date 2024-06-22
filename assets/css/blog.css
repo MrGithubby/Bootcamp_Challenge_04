@@ -17,16 +17,35 @@ h1 {
     margin: 0px;
 }
 
-h2 {
-    border-bottom: 3px solid;
-}
-
 #blog-section{
     border-top:3px solid;
     border-bottom: 3px solid;
     margin-bottom: 5px;
 }
 
+.entryCard {
+    border: 2px solid;
+    margin: 10px;
+}
+
 footer{
     border-top: 3px solid black;
+}
+
+.blog-title{
+    border-bottom: 1px solid;
+}
+
+.blog-content{
+    padding-left: 15px;
+    font-style:italic;
+}
+
+
+.blog-username::before {
+    content: "Posted by: ";
+}
+
+#footer-header{
+    text-align: center;
 }
