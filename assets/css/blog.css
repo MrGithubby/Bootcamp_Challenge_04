@@ -4,6 +4,7 @@
     align-items:center;
     border-bottom: 3px solid;
     padding:10px;
+    margin-bottom: 5px;
 }
 
 #button-container{
@@ -20,6 +21,12 @@ h2 {
     border-bottom: 3px solid;
 }
 
-.blog-section{
-    border:1px solid;
+#blog-section{
+    border-top:3px solid;
+    border-bottom: 3px solid;
+    margin-bottom: 5px;
+}
+
+footer{
+    border-top: 3px solid black;
 }
