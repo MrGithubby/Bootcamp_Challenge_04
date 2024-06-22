@@ -57,6 +57,7 @@ textarea{
 
 label{
     margin-left:10px;
+    color:black;
 }
 
 h2 {
@@ -68,5 +69,37 @@ h1{
 }
 
 body[data-mode="dark"]{
-    background-color: aqua;
+    background-color: black;
+    border-color: white;
+}
+
+body[data-mode="dark"] label{
+    color: white;
+}
+
+body[data-mode="dark"] h2{
+    color: white;
+}
+
+body[data-mode="dark"] h1{
+    color: white;
+}
+
+body[data-mode="dark"] #right-rail{
+    border-left: 2px solid white;
+    margin-left: 5px;
+    border-top: 2px solid white;
+}
+
+body[data-mode="dark"] #left-rail{
+    border-right: 2px solid white;
+    /* padding-top: 30px;
+    padding-bottom: 30%; */
+    margin-right: 5px;
+    border-top: 2px solid white;
+}
+body[data-mode="dark"] #main-navigation{
+    text-align:right;
+    margin:5px;
+    border-bottom: 2px solid white;
 }
