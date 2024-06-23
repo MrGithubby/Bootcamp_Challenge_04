@@ -1,8 +1,23 @@
+:root{
+    --txt-color: black;
+    --mode-color: white;
+}
+
+.dark-mode{
+    --mode-color: black;
+    --txt-color: white;
+}
+
+body * {
+    color: var(--txt-color);
+    background-color: var(--mode-color);
+}
+
 #main-navigation{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid var(--txt-color);
     padding:10px;
     margin-bottom: 5px;
 }
@@ -13,27 +28,27 @@
 }
 
 h1 {
-    color: blue;
+    color: var(--txt-color);
     margin: 0px;
 }
 
 #blog-section{
-    border-top:3px solid;
-    border-bottom: 3px solid;
+    border-top:3px solid var(--txt-color);
+    border-bottom: 3px solid var(--txt-color);
     margin-bottom: 5px;
 }
 
 .entryCard {
-    border: 2px solid;
+    border: 2px solid var(--txt-color);
     margin: 10px;
 }
 
 footer{
-    border-top: 3px solid black;
+    border-top: 3px solid var(--txt-color);
 }
 
 .blog-title{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--txt-color);
 }
 
 .blog-content{

@@ -1,5 +1,6 @@
 let blogSection = document.querySelector("#blog-section");
 let blogEntries = document.querySelector(".blog-entries");
+const backButton = document.querySelector('#back-button');
 
 const formArray = JSON.parse(localStorage.getItem('formArray'));
 
@@ -23,7 +24,11 @@ for(let i = 0; i < formArray.length; i++){
     blogEntries.append(entryCard);
 }
 
+backButton.addEventListener('click', function(){
+    window.location.href = "index.html"
+});
+
 blogSection.append(blogEntries);
 
 
-console.log(formArray.length)
+console.log(formArray)

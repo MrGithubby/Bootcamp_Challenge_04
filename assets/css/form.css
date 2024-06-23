@@ -1,11 +1,26 @@
+:root{
+    --txt-color: black;
+    --mode-color: white;
+}
+
+.dark-mode{
+    --mode-color: black;
+    --txt-color: white;}
+
 body{
     margin: 0 8 0 8;
+}
+
+body * {
+    color: var(--txt-color);
+    background-color: var(--mode-color);
 }
 
 #main-navigation{
     text-align:right;
     margin:5px;
     border-bottom: 2px solid;
+    border-color: var(--txt-color)
 }
 
 #main-navigation > button{
@@ -34,12 +49,14 @@ body{
     padding-bottom: 30%; */
     margin-right: 5px;
     border-top: 2px solid;
+    border-color: var(--txt-color);
 }
 
 #right-rail{
     border-left: 2px solid;
     margin-left: 5px;
     border-top: 2px solid;
+    border-color: var(--txt-color);
 }
 
 form{
@@ -57,7 +74,7 @@ textarea{
 
 label{
     margin-left:10px;
-    color:black;
+    color: var(--txt-color);
 }
 
 h2 {
@@ -66,40 +83,4 @@ h2 {
 
 h1{
     text-align: center;
-}
-
-body[data-mode="dark"]{
-    background-color: black;
-    border-color: white;
-}
-
-body[data-mode="dark"] label{
-    color: white;
-}
-
-body[data-mode="dark"] h2{
-    color: white;
-}
-
-body[data-mode="dark"] h1{
-    color: white;
-}
-
-body[data-mode="dark"] #right-rail{
-    border-left: 2px solid white;
-    margin-left: 5px;
-    border-top: 2px solid white;
-}
-
-body[data-mode="dark"] #left-rail{
-    border-right: 2px solid white;
-    /* padding-top: 30px;
-    padding-bottom: 30%; */
-    margin-right: 5px;
-    border-top: 2px solid white;
-}
-body[data-mode="dark"] #main-navigation{
-    text-align:right;
-    margin:5px;
-    border-bottom: 2px solid white;
 }
