@@ -1,4 +1,5 @@
-let blogForm = document.querySelector('form');
+const blogForm = document.querySelector('form');
+
 let formObject = {
     username: "",
     title: "",
@@ -13,7 +14,6 @@ blogForm.addEventListener('submit', function(event){
 
     let formArray = JSON.parse(localStorage.getItem('formArray')) || [];
 
-
     formObject.username = formUsername.value;
     formObject.title = formTitle.value;
     formObject.content = formContent.value;
@@ -22,4 +22,5 @@ blogForm.addEventListener('submit', function(event){
     console.log(formArray);
     localStorage.setItem('formArray', JSON.stringify(formArray));
     window.location.href = "blog.html";
+    console.log(formArray)
 })
