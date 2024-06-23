@@ -20,7 +20,7 @@ body * {
     text-align:right;
     margin:5px;
     border-bottom: 2px solid;
-    border-color: var(--txt-color)
+    border-color: var(--txt-color);
 }
 
 #main-navigation > button{
